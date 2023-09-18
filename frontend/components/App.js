@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import Card from './Card';
 
+
 const api_key = 'DEMO_KEY'
 const URL = `https://api.nasa.gov/planetary/apod?api_key=${api_key}`;
 
@@ -21,7 +22,7 @@ function App() {
    })
 
     }
-   //fetchPhoto()
+  fetchPhoto()
    setApod({
          date: "2023-09-09",
          explanation:
